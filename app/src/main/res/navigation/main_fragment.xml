@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/main"
+	app:startDestination="@id/home">
+	<fragment
+		android:id="@+id/home"
+		android:name="jp.gr.java_conf.mitchibu.samples.ui.main_home.HomeFragment"
+		android:label="home_fragment"
+		tools:layout="@layout/home_fragment" ></fragment>
+	<fragment
+		android:id="@+id/search"
+		android:name="jp.gr.java_conf.mitchibu.samples.ui.main_search.SearchFragment"
+		android:label="search_fragment"
+		tools:layout="@layout/search_fragment" />
+	<activity
+		android:id="@+id/shopActivity"
+		android:name="jp.gr.java_conf.mitchibu.samples.ShopActivity"
+		android:label="shop_activity"
+		tools:layout="@layout/shop_activity" />
+</navigation>
